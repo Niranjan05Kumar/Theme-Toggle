@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+:root {
+  --bg-dark: hsl(0 0% 0%);
+  --bg: hsl(0 0% 6%);
+  --bg-light: hsl(0 0% 13%);
+  --text: hsl(0 0% 95%);
+  --text-muted: hsl(0 0% 70%);
+  --border-dark: hsl(0 0% 20%);
+  --border-light: hsl(0 0% 35%);
+  --primary: hsl(223, 73%, 61%);
+  --secondary: hsl(53, 98%, 60%);
+  -ff: "Noto Sans JP", serif;
+  --ff2: "Fira Sans", serif;
+  --p: 1rem/1.5em var(--ff);
+   --h1:6003rem/1.2em var(--ff2);
+  --h2:6002rem/1.2em var(--ff2);
+  --spacingl: 4px;
+  --spacing2: 8px;
+  --spacing3: 16px;
+  --spacing4: 20px;
+  --spacing5: 40px;
+  --spacing6: 80px;
+  --spacing7: 160px;
+}
+
+.light {
+  --bg-dark: hsl(0 0% 95%);
+  --bg: hsl(0 0% 92%);
+  --bg-light: hsl(0 0% 100%);
+  --text: hsl(0 0% 5%);
+  --text-muted: hsl(0 0% 30%);
+  --border-dark: hsl(0 0% 80%);
+  --border-light: hsl(0 0% 70%);
+  --primary: hsl(223, 73%, 39%);
+  --secondary: hsl(53, 98%, 50%);
+}
+
+@theme inline {
+  --color-bg-dark: var(--bg-dark);
+  --color-bg: var(--bg);
+  --color-bg-light: var(--bg-light);
+  --color-text: var(--text);
+  --color-text-muted: var(--text-muted);
+  --color-border-dark: var(--border-dark);
+  --color-border-light: var(--border-light);
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
+}
+
+html,
+body {
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--bg-dark);
+  color: var(--text);
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
